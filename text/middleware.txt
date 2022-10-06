@@ -1,0 +1,7 @@
+const log = (req, res, next) => {
+  console.log(req.body);
+  console.log(`Data: ${Date.now()}`);
+  next();
+};
+
+app.use(log);
